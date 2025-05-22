@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>age calculator</title>
+        <link rel="stylesheet" href="ilyes.css"> 
+<style>
+
+.up{
+box-sizing: border-box;
+background-color: rgb(202, 202, 202) ;
+padding: 20px;
+margin: 0;
+display: flex;
+justify-content: space-between;
+align-items: center;
+box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.up a{
+padding: 30px;
+text-decoration: none;
+color: black;
+}
+
+.up a:hover{
+    background-color: brown;
+    font-weight: bold;
+}
+
+/* Login link hover effect */
+.up a[href=""]:nth-child(1):hover {
+    background-color: #2196F3;
+    color: white;
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+}
+
+/* Home link hover effect */
+.up a[href=""]:nth-child(2):hover {
+    background-color: #4CAF50;
+    color: white;
+    transform: translateY(-5px);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+}
+
+/* Programmers link hover effect */
+.up a[href=""]:nth-child(3):hover {
+    background-color: #9C27B0;
+    color: white;
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+}
+
+.don{
+    display: inline-block;
+    transform-origin: 50% 50%;
+}
+
+.don img {
+    display: block;
+}
+
+.don:hover{
+    animation: spin 0.5s linear forwards;
+}
+
+.don:not(:hover) {
+    animation: spinBack 0.5s linear forwards;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(60deg);
+    }
+}
+
+@keyframes spinBack {
+    from {
+        transform: rotate(60deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+.up a{
+padding: 30px;
+text-decoration: none;
+color: black;
+}
+
+.up a:hover{
+    background-color: brown;
+    font-weight: bold;
+}
+
+.tum{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.tum input {
+    padding: 10px 20px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 300px;
+    outline: none;
+    margin-bottom: 15px;
+}
+
+.tum input:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
+}
+
+.input-container {
+    background-color: bisque;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+#result {
+    margin-top: 15px;
+    color: #8B4513;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+</style>
+</head>
+<body>
+    <div class="up ">
+        <div class="don">
+             <img width="50" src="favicon.png" alt="">
+            </div>
+       
+
+<div>
+<a href="">login</a>
+<a href="">home</a>
+<a href="">programers</a>
+
+
+
+</div>
+</div>
+<div class="tum">
+    <div class="input-container">
+        <input type="text" id="tepot">
+        <button id="oms">sumbit</button>
+        <p id="result"></p>
+    </div>
+    <script src="ilyes.js"></script>
+</div>
+</html>
+</body>
+
